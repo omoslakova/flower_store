@@ -1,0 +1,58 @@
+export const goods = [
+    {
+        id: 'js01',
+        category: 'flowers',
+        name: 'КОРАЛ ШАРМ',
+        poster: "",
+        price: 55,
+    },
+    {
+        id: 'js02',
+        category: 'flowers',
+        name: 'ЗЕФИР',
+        poster: "",
+        price: 65,
+    },
+    {
+        id: 'js03',
+        category: 'flowerss',
+        name: 'ДЖУЛЬЕТТА',
+        poster: "",
+        price: 70,
+    },
+    {
+        id: 'data01',
+        category: 'flowers',
+        name: 'ПИЛИГРИМ',
+        poster: "",
+        price: 85,
+    },
+    {
+        id: 'js04',
+        category: 'flowers',
+        name: 'ОБЛАКО',
+        poster: "",
+        price: 60,
+    },
+    {
+        id: 'card01',
+        category: 'cards',
+        name: 'Открытка на День Святого Валентина',
+        poster: "",
+        price: 5,
+    },
+    {
+        id: 'card02',
+        category: 'cards',
+        name: 'Открытка на День Рождения',
+        poster: "",
+        price: 5,
+    },
+    {
+        id: 'card03',
+        category: 'cards',
+        name: 'Открытка Благодарность',
+        poster: "",
+        price: 5,
+    },
+];
