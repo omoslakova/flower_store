@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import Header from './Header';
-
-import BasketList from './BasketList';
+import Basket from './Basket';
 import GoodsList from './GoodsList';
 import Search from './Search';
+import { ShoppingBasket } from '@mui/icons-material';
 
 import { goods } from '../data/goods';
 import { Container } from '@mui/system';
@@ -12,6 +12,7 @@ const App = () => {
     const [order, setOrder] = useState([]);
     const [search, setSearch] = useState('');
     const [products, setProducts] = useState(goods);
+    const [isCartOpen, setCartOpen] = useState(false);
 
     const handleChange = (e) => {
         if (!e.target.value) {
@@ -68,7 +69,10 @@ const App = () => {
 
     return (
         <>
-        <Header />
+        <Header 
+        handleCart={() => setCartOpen(true)}
+        orderLen={order.length}
+        />
         <Container
         sx={{
             mt: '1rem'
@@ -82,11 +86,13 @@ const App = () => {
                     goods={products}
                     setOrder={addToOrder}
                 />
-                <BasketList
-                    order={order}
-                    setOrder={removeFromOrder}
-                />
+                
            </Container>
+           <Basket
+           order={order}
+           removeFromOrder={removeFromOrder}
+           cartOpen={isCartOpen}
+           closeCart={() => setCartOpen(false)} />
         </>
     );
 }

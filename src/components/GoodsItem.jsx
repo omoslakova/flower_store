@@ -1,14 +1,17 @@
 import React from 'react';
-import { Card, CardMedia, CardContent, CardActions, Grid, Typography } from '@mui/material';
+import { Card, CardMedia, CardContent, CardActions, Grid, Typography, Button } from '@mui/material';
 
 const GoodsItem = (props) => {
     const { name, price, poster, setOrder } = props;
 
     return (
         <Grid item xs="12" md="4"> 
-            <Card>
+            <Card
+            sx={{height: '100%',
+            }}>
                 <CardMedia
-                    img={poster}
+                    image={poster}
+                    component="img"
                     alt={name}
                     title={name}
                     sx={{ height: 140 }}
@@ -22,8 +25,8 @@ const GoodsItem = (props) => {
                     <Typography variant="body1">Цена: {price} руб.</Typography>
                     </CardContent> 
                     <CardActions>
-                   <button
-                        className='btn btn-primary'
+                   <Button
+                        variant="outlined"
                         onClick={() =>
                             setOrder({
                                 id: props.id,
@@ -33,7 +36,7 @@ const GoodsItem = (props) => {
                         }
                     >
                         Купить
-                    </button>
+                    </Button>
                 
                 </CardActions>
             </Card>
