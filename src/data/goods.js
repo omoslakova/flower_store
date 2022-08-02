@@ -10,14 +10,14 @@ export const goods = [
         id: 'js02',
         category: 'flowers',
         name: 'ЗЕФИР',
-        poster: "",
+        poster: "https://mykaleidoscope.ru/uploads/posts/2020-08/1596480387_4-p-nezhnie-buketi-tsvetov-s-dnem-rozhdeniya-i-14.jpg",
         price: 65,
     },
     {
         id: 'js03',
         category: 'flowerss',
         name: 'ДЖУЛЬЕТТА',
-        poster: "",
+        poster: "img/jul",
         price: 70,
     },
     {
