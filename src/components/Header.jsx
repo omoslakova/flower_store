@@ -6,8 +6,9 @@ function Header({handleCart, orderLen}) {
         <AppBar position="static">
             <Toolbar>
                 <Typography
-                variant="h6"
+                variant="h5"
                 component="span"
+                align="center"
                 sx={{flexGrow: 1}}>
                     Flower Shop
                 </Typography>

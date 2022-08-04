@@ -7,10 +7,10 @@ import App from './components/App';
 const theme = createTheme({
     palette: {
         primary: {
-            main: '#61dafb'
+            main: '#4f30ab'
         },
         secondary: {
-            main: '#da61bf'
+            main: '#3ccc18'
         }
     }
 });
